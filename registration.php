@@ -191,6 +191,7 @@ if (isset($_POST['register'])){
         });
     });
   };
+  
   // Get form fields
   const firstName = document.getElementById('first_name');
   const lastName = document.getElementById('last_name');
@@ -204,6 +205,7 @@ if (isset($_POST['register'])){
   validateField(password, isPasswordValid);
   checkUsernameAvailability(username);
   checkEmailAvailability(email);
+  checkCourseAvailability(course);
  
   // Form submission validation
   document.getElementById('registrationForm').addEventListener('submit', function (e) {
